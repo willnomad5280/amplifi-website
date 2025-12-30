@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
   <!-- Icon - Nested rounded squares -->
-  <g transform="translate(0, 5)">
+  <g transform="translate(0, 0)">
     <!-- Outer green square -->
     <rect x="2" y="2" width="46" height="46" rx="10" fill="#5BA97A"/>
     <!-- Middle lime/yellow square -->
@@ -10,8 +10,5 @@
   </g>
 
   <!-- Text "Amplifi" -->
-  <text x="62" y="35" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="32" font-weight="600" fill="#357F8F">Amplifi</text>
-
-  <!-- Text "by NOMAD" -->
-  <text x="62" y="52" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500" letter-spacing="1" fill="#357F8F">by NOMAD</text>
+  <text x="58" y="33" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="32" font-weight="600" fill="#357F8F">Amplifi</text>
 </svg>
