@@ -335,6 +335,28 @@ p {
 
 .mockup-value.success {
     color: var(--color-green);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    background: var(--color-green);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.2);
+    }
 }
 
 .mockup-subtext {
@@ -508,28 +530,60 @@ p {
 }
 
 /* ==========================================================================
-   Testimonial
+   Testimonials Carousel
    ========================================================================== */
 
-.testimonial {
+.testimonials {
     padding: var(--spacing-xxxl) 0;
     background: linear-gradient(180deg, #f8fafc 0%, var(--color-white) 100%);
 }
 
-.testimonial-card {
+.testimonials-carousel {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
     position: relative;
 }
 
-.testimonial-quote {
-    color: var(--color-teal);
+.testimonials-track {
+    position: relative;
+    min-height: 320px;
+}
+
+.testimonial-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+
+.testimonial-slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.testimonial-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-xl);
+    padding: var(--spacing-xl);
+    text-align: center;
+}
+
+.testimonial-stars {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
     margin-bottom: var(--spacing-lg);
+    color: #fbbf24;
 }
 
 .testimonial-card blockquote {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: 500;
     line-height: 1.6;
     color: var(--color-text);
@@ -568,8 +622,35 @@ p {
 }
 
 .author-info span {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     color: var(--color-text-muted);
+}
+
+.testimonials-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: var(--spacing-lg);
+}
+
+.testimonials-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: var(--color-border);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.testimonials-dots .dot:hover {
+    background: var(--color-mint);
+}
+
+.testimonials-dots .dot.active {
+    background: var(--color-teal);
+    transform: scale(1.2);
 }
 
 /* ==========================================================================
@@ -622,6 +703,84 @@ p {
 .benefit-card p {
     font-size: 0.95rem;
     line-height: 1.7;
+}
+
+/* ==========================================================================
+   FAQ
+   ========================================================================== */
+
+.faq {
+    padding: var(--spacing-xxxl) 0;
+    background: #f8fafc;
+}
+
+.faq-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.faq-item {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: var(--color-mint);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-lg);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: var(--font-family);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-text);
+    gap: var(--spacing-md);
+}
+
+.faq-question:hover {
+    color: var(--color-teal);
+}
+
+.faq-icon {
+    flex-shrink: 0;
+    color: var(--color-text-muted);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.open .faq-icon {
+    transform: rotate(180deg);
+    color: var(--color-teal);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 300px;
+}
+
+.faq-answer p {
+    padding: 0 var(--spacing-lg) var(--spacing-lg);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--color-text-light);
 }
 
 /* ==========================================================================

@@ -48,16 +48,19 @@
                         <div class="mockup-content">
                             <div class="mockup-card">
                                 <div class="mockup-label">Rent Status</div>
-                                <div class="mockup-value success">Guaranteed</div>
+                                <div class="mockup-value success">
+                                    <span class="status-dot"></span>
+                                    Guaranteed
+                                </div>
                             </div>
                             <div class="mockup-card">
                                 <div class="mockup-label">Next Payment</div>
-                                <div class="mockup-value">$2,450</div>
+                                <div class="mockup-value">$<span class="counter" data-target="2450">0</span></div>
                                 <div class="mockup-subtext">Depositing Jan 1</div>
                             </div>
                             <div class="mockup-card">
                                 <div class="mockup-label">Available to Advance</div>
-                                <div class="mockup-value">$4,900</div>
+                                <div class="mockup-value">$<span class="counter" data-target="4900">0</span></div>
                                 <a href="mailto:amplifi@nomadlease.com" class="mockup-btn">Get Funds Now</a>
                             </div>
                         </div>
@@ -151,22 +154,77 @@
         </div>
     </section>
 
-    <!-- Testimonial -->
-    <section class="testimonial">
+    <!-- Testimonials -->
+    <section class="testimonials">
         <div class="container">
-            <div class="testimonial-card fade-in-up">
-                <div class="testimonial-quote">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" opacity="0.15">
-                        <path d="M11 7H7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4l-4-8h4V7zm8 0h-4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4l-4-8h4V7z"/>
-                    </svg>
-                </div>
-                <blockquote>"Amplifi has transformed how we serve our owners. They love the guaranteed rent, and we've seen a measurable improvement in owner retention since we started offering it."</blockquote>
-                <div class="testimonial-author">
-                    <div class="author-avatar">JM</div>
-                    <div class="author-info">
-                        <strong>Property Management Partner</strong>
-                        <span>Early Access Customer</span>
+            <div class="section-header fade-in-up">
+                <span class="section-badge">Testimonials</span>
+                <h2>What property managers are saying</h2>
+            </div>
+            <div class="testimonials-carousel fade-in-up">
+                <div class="testimonials-track">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <blockquote>"Amplifi has transformed how we serve our owners. They love the guaranteed rent, and we've seen a measurable improvement in owner retention since we started offering it."</blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">SM</div>
+                                <div class="author-info">
+                                    <strong>Sarah Mitchell</strong>
+                                    <span>Operations Director, Coastal Property Group</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <blockquote>"The rent advance feature is a game-changer. Our owners no longer have to worry about cash flow timing, and it's become a real differentiator for our management services."</blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">JR</div>
+                                <div class="author-info">
+                                    <strong>James Rodriguez</strong>
+                                    <span>CEO, Premier Property Management</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <blockquote>"Setup was incredibly simple—we were live in less than a day. Our owners started using rent advance within the first week, and the feedback has been overwhelmingly positive."</blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">AL</div>
+                                <div class="author-info">
+                                    <strong>Amanda Liu</strong>
+                                    <span>Partner, Horizon Realty Services</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-dots">
+                    <button class="dot active" data-slide="0"></button>
+                    <button class="dot" data-slide="1"></button>
+                    <button class="dot" data-slide="2"></button>
                 </div>
             </div>
         </div>
@@ -220,6 +278,63 @@
                     </div>
                     <h3>Simple Setup</h3>
                     <p>Get started quickly with minimal integration work. Our team handles the complexity—you can be live in as little as 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-badge">FAQ</span>
+                <h2>Frequently asked questions</h2>
+            </div>
+            <div class="faq-grid fade-in-up">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How does Amplifi integrate with my property management software?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Amplifi integrates directly into your existing property management software through our secure API. Your owners see Amplifi features right in their portal—no separate logins or apps required. Setup typically takes less than 24 hours.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What happens if a tenant doesn't pay rent on time?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>That's the beauty of Amplifi—owners still get paid on time regardless of when tenants pay. We take on the risk of late payments, so your owners receive their guaranteed rent on the scheduled date every month.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How does rent advance work for property owners?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Owners can request an advance on their upcoming rent payments directly through their portal. Funds are typically deposited within 24 hours. It's a simple, hassle-free way for owners to access liquidity when they need it.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is there any cost or integration work required for property managers?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>There's no upfront cost for property managers to offer Amplifi. We handle all the integration work, compliance, and support. You can even generate additional revenue by offering these services to your owners.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do you ensure the security of financial transactions?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We use bank-level encryption and are SOC 2 compliant. All financial transactions are processed through licensed and regulated banking partners. Your data and your owners' data are protected by the highest security standards in the industry.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -287,6 +402,106 @@
         }, observerOptions);
 
         document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        let countersAnimated = false;
+
+        const animateCounters = () => {
+            if (countersAnimated) return;
+            countersAnimated = true;
+
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const duration = 1500;
+                const step = target / (duration / 16);
+                let current = 0;
+
+                const updateCounter = () => {
+                    current += step;
+                    if (current < target) {
+                        counter.textContent = Math.floor(current).toLocaleString();
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target.toLocaleString();
+                    }
+                };
+                updateCounter();
+            });
+        };
+
+        // Trigger counter animation when mockup is visible
+        const mockupObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setTimeout(animateCounters, 500);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const mockup = document.querySelector('.hero-mockup');
+        if (mockup) mockupObserver.observe(mockup);
+
+        // Testimonials Carousel
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const dots = document.querySelectorAll('.testimonials-dots .dot');
+        let currentSlide = 0;
+        let autoSlideInterval;
+
+        const goToSlide = (index) => {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentSlide = index;
+        };
+
+        const nextSlide = () => {
+            const next = (currentSlide + 1) % slides.length;
+            goToSlide(next);
+        };
+
+        // Auto-advance slides
+        const startAutoSlide = () => {
+            autoSlideInterval = setInterval(nextSlide, 5000);
+        };
+
+        const stopAutoSlide = () => {
+            clearInterval(autoSlideInterval);
+        };
+
+        // Dot click handlers
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                stopAutoSlide();
+                goToSlide(index);
+                startAutoSlide();
+            });
+        });
+
+        if (slides.length > 0) startAutoSlide();
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    otherItem.classList.remove('open');
+                });
+
+                // Toggle current item
+                if (!isOpen) {
+                    item.classList.add('open');
+                }
+            });
+        });
     </script>
 </body>
 </html>
